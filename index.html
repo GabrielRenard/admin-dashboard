@@ -14,7 +14,56 @@
   <body>
     <!-- Header -->
     <header>
-      <div class="header__grid-container">
+      <div class="nav__toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav class="nav__menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <i class="fa-solid fa-house" class="nav__link"></i>
+            <a href="#" class="nav__link">Home </a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-user"></i>
+            <a href="#" class="nav__link">Profile </a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-message"></i>
+            <a href="#" class="nav__link">Messages</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <a href="#" class="nav__link">History</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-list-check"></i>
+            <a href="#" class="nav__link">Tasks</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-people-group"></i>
+            <a href="#" class="nav__link">Communities</a>
+          </li>
+
+          <br />
+
+          <li class="nav__item">
+            <i class="fa-solid fa-gear"></i>
+            <a href="#" class="nav__link">Settings</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-circle-info"></i>
+            <a href="#" class="nav__link">Support</a>
+          </li>
+          <li class="nav__item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <a href="#" class="nav__link">Privacy</a>
+          </li>
+          <div class="nav__close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+        </ul>
+      </nav>
+      <div class="header__container">
         <div class="header__search">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" class="header__search-input" />
@@ -28,14 +77,13 @@
             class="header__avatar"
           />
           <h4 class="username">Gabriel Renard</h4>
-          <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="header__welcome-container">
+        <div class="header__welcome">
           <img
             src="./assets/Images/user-avatar.png"
             alt="user avatar"
-            class="header__avatar"
+            class="header__welcome-avatar"
           />
           <div class="header__welcome-heading">
             <h4>Gabriel Renard (@gabriel)</h4>
@@ -55,5 +103,7 @@
     </aside>
     <!-- Main content -->
     <main></main>
+
+    <script src="./assets/JS/main.js"></script>
   </body>
 </html>
