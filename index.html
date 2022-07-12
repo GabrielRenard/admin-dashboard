@@ -12,97 +12,275 @@
     <title>Admin dashboard</title>
   </head>
   <body>
-    <!-- Header -->
+    <nav class="nav__menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <i class="fa-solid fa-house" class="nav__link"></i>
+          <a href="#" class="nav__link">Home </a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-user"></i>
+          <a href="#" class="nav__link">Profile </a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-message"></i>
+          <a href="#" class="nav__link">Messages</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <a href="#" class="nav__link">History</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-list-check"></i>
+          <a href="#" class="nav__link">Tasks</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-people-group"></i>
+          <a href="#" class="nav__link">Communities</a>
+        </li>
+
+        <br />
+
+        <li class="nav__item">
+          <i class="fa-solid fa-gear"></i>
+          <a href="#" class="nav__link">Settings</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-circle-info"></i>
+          <a href="#" class="nav__link">Support</a>
+        </li>
+        <li class="nav__item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <a href="#" class="nav__link">Privacy</a>
+        </li>
+        <div class="nav__close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        
+      </ul>
+    </nav>
     <header>
-      <div class="nav__toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <nav class="nav__menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <i class="fa-solid fa-house" class="nav__link"></i>
-            <a href="#" class="nav__link">Home </a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-user"></i>
-            <a href="#" class="nav__link">Profile </a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-message"></i>
-            <a href="#" class="nav__link">Messages</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-clock-rotate-left"></i>
-            <a href="#" class="nav__link">History</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-list-check"></i>
-            <a href="#" class="nav__link">Tasks</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-people-group"></i>
-            <a href="#" class="nav__link">Communities</a>
-          </li>
-
-          <br />
-
-          <li class="nav__item">
-            <i class="fa-solid fa-gear"></i>
-            <a href="#" class="nav__link">Settings</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-circle-info"></i>
-            <a href="#" class="nav__link">Support</a>
-          </li>
-          <li class="nav__item">
-            <i class="fa-solid fa-shield-halved"></i>
-            <a href="#" class="nav__link">Privacy</a>
-          </li>
-          <div class="nav__close">
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </ul>
-      </nav>
+      <!-- Nav menu -->
+ <!-- HEADER -->
+      <!-- Header -->
       <div class="header__container">
-        <div class="header__search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" class="header__search-input" />
-        </div>
+        <div class="header__top">
+          <div class="header__search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="header__search-input" />
+          </div>
 
-        <div class="header__account">
-          <i class="fa-solid fa-bell"></i>
-          <img
-            src="./assets/Images/user-avatar.png"
-            alt="user avatar"
-            class="header__avatar"
-          />
-          <h4 class="username">Gabriel Renard</h4>
-        </div>
-
-        <div class="header__welcome">
-          <img
-            src="./assets/Images/user-avatar.png"
-            alt="user avatar"
-            class="header__welcome-avatar"
-          />
-          <div class="header__welcome-heading">
-            <h4><span>Hi there,</span> <br />Gabriel Renard (@gabriel)</h4>
+          <div class="header__account">
+            <i class="fa-solid fa-bell"></i>
+            <img
+              src="./assets/Images/avatars/user-avatar.png"
+              alt="user avatar"
+              class="header__account-avatar"
+            />
+            <h4 class="username">Gabriel Renard</h4>
+          </div>
+          <div class="nav__toggle">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
 
-        <div class="header__buttons">
-          <button>New</button>
-          <button>Upload</button>
-          <button>Share</button>
+        <div class="header__bottom">
+          <div class="header__welcome">
+            <img
+              src="./assets/Images/avatars/user-avatar.png"
+              alt="user avatar"
+              class="header__welcome-avatar"
+            />
+            <div class="header__welcome-heading">
+              <h4><span>Hi there,</span> <br />Gabriel Renard (@gabriel)</h4>
+            </div>
+          </div>
+
+          <div class="header__buttons">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
       </div>
     </header>
-    <!-- Sidebar -->
-    <aside>
-      <div class="sidebar"></div>
-    </aside>
-    <!-- Main content -->
-    <main></main>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Projects -->
+      <h3 class="projects-title">Projects</h3>
+      <div class="projects">
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Portfolio</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque alias nostrum illo, quisquam commodi.</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://gabrielrenard.github.io/Portfolio-Vanilla-JS/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Portfolio-Vanilla-JS" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Calculator</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, voluptatibus!</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://gabrielrenard.github.io/Glassmorphic-Calculator/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Glassmorphic-Calculator" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Rock Paper Scissors</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ducimus cumque quasi!</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://gabrielrenard.github.io/Rock-Paper-Scissors/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Rock-Paper-Scissors" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Cinema Booking UI</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque alias nostrum illo, quisquam commodi.</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://gabrielrenard.github.io/Cinema-Seat-Booking/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Cinema-Seat-Booking-UI" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Expense Tracker</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, debitis.</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://expense-tracker-gr.herokuapp.com/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Expense-Tracker" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        <div class="project__card">
+            <div class="project__card-title">
+              <h4>Portfolio</h4>
+            </div>
+            <div class="project__card-subtitle">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis itaque alias nostrum illo, quisquam commodi.</p>
+            </div>
+          <div class="project__card-icons">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <div class="project__card-buttons">
+            <a href="https://gabrielrenard.github.io/Portfolio-Vanilla-JS/" target="_blank"><button>Live preview</button></a>
+            <a href="https://github.com/GabrielRenard/Portfolio-Vanilla-JS" target="_blank"><button>Code</button></a>
+          </div>
+        </div>
+        
+
+        
+        </div>
+      </div>
+      <!-- Announcements -->
+      <h3 class="announcements-title">Announcements</h3>
+      <div class="announcement__trending-container">
+        <div class="announcements">
+          <div class="announcement__card">
+            <div class="announcement__card-title">
+              <h4>Site Maintenance</h4>
+            </div>
+            <div class="announcement__card-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+              consectetur.
+            </div>
+            <hr />
+            <div class="announcement__card-title">
+              <h4>Community Share Day</h4>
+            </div>
+            <div class="announcement__card-subtitle">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim,
+              assumenda.
+            </div>
+            <hr />
+            <div class="announcement__card-title">
+              <h4>Updated Privacy Policy</h4>
+            </div>
+            <div class="announcement__card-subtitle">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              recusandae.
+            </div>
+            <hr />
+          </div>
+        </div>
+  
+        <!-- Trending -->
+        <div class="trending">
+          <h3>Trending</h3>
+          <div class="trending__card">
+            <div class="trending__item">
+              <img src="./assets/Images/avatars/gamer.png" alt="user-avatar" />
+              <div class="trending__item-text">
+                <p>@alex <br/> <span>No Traffic Maker</span></p>
+              </div>
+            </div>
+            <div class="trending__item">
+              <img src="./assets/Images/avatars/man.png" alt="user-avatar" />
+              <div class="trending__item-text">
+                <p>@Tegan <br/> <span>World Peace Builder</span></p>
+              </div>
+            </div>
+            <div class="trending__item">
+              <img src="./assets/Images/avatars/man (1).png" alt="user-avatar" />
+              <div class="trending__item-text">
+                <p>@morgan <br/> <span>Super Cool Project</span></p>
+              </div>
+            </div>
+            <div class="trending__item">
+              <img src="./assets/Images/avatars/profile.png" alt="user-avatar" />
+              <div class="trending__item-text">
+                <p>@kendall <br/> <span>Life Changing App</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="./assets/JS/main.js"></script>
   </body>

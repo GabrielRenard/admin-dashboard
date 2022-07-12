@@ -4,18 +4,16 @@ const navClose = document.querySelector(".nav__close");
 const navLink = document.querySelectorAll(".nav__link");
 
 // Open nav menu
-if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
-  });
-}
+
+navToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("show-menu");
+});
 
 // close nav menu
-if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
-  });
-}
+
+navClose.addEventListener("click", () => {
+  navMenu.classList.remove("show-menu");
+});
 
 const linkAction = () => {
   navMenu.classList.remove("show-menu");
